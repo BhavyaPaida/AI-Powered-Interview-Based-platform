@@ -1,0 +1,344 @@
+const API_BASE_URL = 'http://localhost:5000/api';
+
+export const api = {
+  // Auth endpoints
+  register: async (name, email, password) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password })
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Registration failed' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Register API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  login: async (email, password) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Login failed' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Login API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // ==================== Company Endpoints ====================
+  
+  getCompanies: async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/companies`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Failed to fetch companies' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get companies API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  getCompanyDetails: async (companyName) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/company/${encodeURIComponent(companyName)}`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Company not found' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get company details API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // Resume endpoints
+  uploadResume: async (userId, file) => {
+    try {
+      const formData = new FormData();
+      formData.append('user_id', userId);
+      formData.append('resume', file);
+      
+      const response = await fetch(`${API_BASE_URL}/upload-resume`, {
+        method: 'POST',
+        body: formData
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Upload failed' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Upload resume API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // JD endpoints
+  uploadJD: async (userId, file) => {
+    try {
+      const formData = new FormData();
+      formData.append('user_id', userId);
+      formData.append('jd', file);
+      
+      const response = await fetch(`${API_BASE_URL}/upload-jd`, {
+        method: 'POST',
+        body: formData
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Upload failed' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Upload JD API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // Get user data
+  getUserResume: async (userId) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/user-resume/${userId}`);
+      
+      if (!response.ok) {
+        return { success: false, error: 'Resume not found' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get resume API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  getUserJD: async (userId) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/user-jd/${userId}`);
+      
+      if (!response.ok) {
+        return { success: false, error: 'JD not found' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get JD API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // Create interview (UPDATED to include company_name)
+  createInterview: async (userId, resumeId, jdId, interviewType, companyName = null) => {
+    try {
+      const payload = { 
+        user_id: userId, 
+        resume_id: resumeId, 
+        jd_id: jdId, 
+        interview_type: interviewType 
+      };
+      
+      // Add company_name only if it's provided and interview is company-specific
+      if (companyName && interviewType === "Company-Specific") {
+        payload.company_name = companyName;
+      }
+      
+      const response = await fetch(`${API_BASE_URL}/create-interview`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Failed to create interview' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Create interview API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // Get user interviews
+  getUserInterviews: async (userId) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/user-interviews/${userId}`);
+      
+      if (!response.ok) {
+        return { success: false, error: 'Interviews not found' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get interviews API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+  
+  // LiveKit Token (UPDATED to include company_name)
+  getLiveKitToken: async (userId, interviewId, interviewType, companyName = null) => {
+    try {
+      const payload = {
+        user_id: userId,
+        interview_id: interviewId,
+        interview_type: interviewType,
+      };
+      
+      // Add company_name if provided
+      if (companyName) {
+        payload.company_name = companyName;
+      }
+      
+      const response = await fetch(`${API_BASE_URL}/livekit-token`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Failed to get LiveKit token' };
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('LiveKit Token API error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // ==================== Transcript Endpoints ====================
+  
+  saveInterviewTranscripts: async (interviewId, transcripts) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/save-transcripts`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          interview_id: interviewId,
+          transcripts: transcripts
+        })
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Failed to save transcripts' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Save transcripts error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // ==================== Check Interview Data ====================
+  
+  checkInterviewData: async (interviewId) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/check-interview-data/${interviewId}`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Failed to check data' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Check interview data error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // ==================== Report Endpoints ====================
+  
+  generateReport: async (interviewId) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/generate-report/${interviewId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        return { success: false, error: error.error || 'Failed to generate report' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Generate report error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  getInterviewReport: async (interviewId) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/interview-report/${interviewId}`);
+      
+      if (!response.ok) {
+        return { success: false, error: 'Report not found' };
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Get report error:', error);
+      return { success: false, error: 'Network error' };
+    }
+  },
+
+  // ==================== Health Check ====================
+  
+  healthCheck: async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/health`);
+      return await response.json();
+    } catch (error) {
+      console.error('Health check error:', error);
+      return { status: 'unhealthy', error: 'Cannot reach server' };
+    }
+  },
+
+ 
+  
+  
+
+  
+};

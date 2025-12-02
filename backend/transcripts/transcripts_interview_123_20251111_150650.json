@@ -1,0 +1,127 @@
+{
+  "items": [
+    {
+      "id": "item_67615477854b",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hello! Welcome to your Technical interview session. I'm your AI interviewer today. We'll start with a brief introduction, then go through 5 main questions with follow-ups. This will take about 15-20 minutes. Take your time with your responses and feel free to be detailed. Ready to begin?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_0e0984685e7b",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99902344
+    },
+    {
+      "id": "item_2619c25140f4",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great! Let's start with the first question:\n\n**Question 0:** Introduce yourself – tell me about your background, education, and what you're passionate about."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_1d619120ac41",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hi. I am Davia."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9921875
+    },
+    {
+      "id": "item_1183916bf3fb",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you, Davia.\n\n**Question 1:** Can you explain the concept of Object-Oriented Programming (OOP) and its main principles? Please provide a brief example if possible."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_5a0d66856271",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Passionate about coding and a photobic student."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9033203
+    },
+    {
+      "id": "item_28a0a23198a4",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you for that brief introduction, Davia.\n\n**Question 1:** Can you explain the concept of Object-Oriented Programming (OOP) and its main principles? Please provide a brief example if possible."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_3b525f382349",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "OOP means object oriented programming. It is used"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9912109499999999
+    },
+    {
+      "id": "item_accfc385aefc",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you for starting, Davia. Please continue with your explanation of OOP and its principles. I'm interested to hear about what it's used for and the core concepts."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_8182a96feece",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Its principles are encapsulation data inheritance,"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9873047
+    },
+    {
+      "id": "item_0e730ac7980f",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "You're on the right track, Davia! You've mentioned a couple of key principles. Could you elaborate on what **encapsulation** and **inheritance** mean in the context of OOP? And what are the other main principles of OOP?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_71cd554bf5ae",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Means getting the properties from the parent classes."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 1.0
+    },
+    {
+      "id": "item_6d407131e3da",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "That's a good description of **inheritance**, Davia. It's about deriving properties and behaviors from a parent class.\n\nNow, could you tell me more about **encapsulation**? What does that principle entail? And can you recall any other core principles of OOP?"
+      ],
+      "interrupted": false
+    }
+  ]
+}

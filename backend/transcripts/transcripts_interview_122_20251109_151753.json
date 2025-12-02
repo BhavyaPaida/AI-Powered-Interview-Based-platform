@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "id": "item_281a53e0ccef",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great! Let's begin.\n\n**Question 0:** Introduce yourself - tell me about your background, education, and what you're passionate about."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_c95edda16137",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hi. I am"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9772949
+    },
+    {
+      "id": "item_794eb1658a6d",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you for introducing yourself.\n\nNow, let's move on to some questions specific to Zomato.\n\n**Question 1:** Zomato is known for its rapid growth and constant innovation in the food delivery and restaurant tech space. Can you tell me about a time you identified a problem and took initiative to find a creative solution, perhaps in a project or an extracurricular activity?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_be8d3f2d1e61",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hi."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.0
+    }
+  ]
+}

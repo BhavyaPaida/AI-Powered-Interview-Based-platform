@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "item_242669280aaf",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hello! It's great to meet you. Let's begin. Please introduce yourself - tell me about your educational background, what you're passionate about, and what interests you about this field."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_9ad083111114",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hi. I am Bavia. I am a computer science student. So yeah."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99951172
+    },
+    {
+      "id": "item_d3a14a28c051",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you, Bavia. It's nice to meet you.\n\nTo help me understand your background better, could you elaborate a bit more on your computer science studies? For example, what specific areas within computer science have you found most engaging, or what kind of projects have you worked on during your degree?"
+      ],
+      "interrupted": false
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "id": "item_b3ddbc454676",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hello! Welcome to your Resume Based session. I'm your AI interviewer today. We'll start with a brief introduction, then go through 5 main questions with follow-ups. This will take about 15-20 minutes. Take your time with your responses and feel free to be detailed. Ready to begin?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_8ab1b5378102",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9890137
+    },
+    {
+      "id": "item_be3ba5857348",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great! Let's start.\n\n**Question 0: Introduce yourself - tell me about your background, education, and what you're passionate about.**"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_8953ca01108c",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hi. I am Bavia. I'm from"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99902344
+    },
+    {
+      "id": "item_7d6d29581981",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you, Bavia. It's nice to meet you.\n\n**Question 1: Looking at your resume, I see you have listed several projects. Could you tell me about the project you are most proud of and what your specific role and contributions were in that project?**"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_e38705cf8901",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "BTech fourth year student."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9091797
+    },
+    {
+      "id": "item_72a19e81ac4e",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you for sharing that.\n\n**Question 2: I see you've listed \"Java\" and \"Python\" under your skills. Can you describe a situation where you had to use both languages in a single project, or explain how you've leveraged the strengths of each in different contexts?**"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_d58ef1791803",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes. Uh, when I, uh, worked on two projects,"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9980469
+    },
+    {
+      "id": "item_d5d85fcd5ea7",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "That's great to hear you've had hands-on experience with both.\n\n**Question 3: Your resume mentions a certification in [mention a specific certification from their resume, e.g., \"AWS Cloud Practitioner\" or \"Data Structures and Algorithms\"]. What was the most valuable thing you learned from this certification, and how have you applied that knowledge in practice?**"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_0f700c877cf5",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "so"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.5576172
+    },
+    {
+      "id": "item_a4c5fd05d9d4",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "I understand. Let's move on for now.\n\n**Question 4: Given that you're applying for a [mention the specific role they are applying for, e.g., \"Software Engineer\" or \"Data Analyst\"] position, how do you see your skills and the experience you've gained from your projects aligning with the core responsibilities of this role as outlined in our job description?**"
+      ],
+      "interrupted": false
+    }
+  ]
+}

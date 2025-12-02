@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "item_9ea15289526e",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Let's begin. Please introduce yourself - tell me about your educational background, what you're passionate about, and what interests you about this field."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_3490898ae117",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Bye."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.5109863
+    },
+    {
+      "id": "item_80fa0bc681f4",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "That's not quite the start I was expecting! It seems there might have been a misunderstanding. My role here is to conduct a technical interview for a B.Tech CSE fresher candidate.\n\nTo clarify, I'm looking for you to introduce yourself, as I asked. This is the first step in our interview process. Could you please tell me about your background, education, and what you're passionate about in technology?"
+      ],
+      "interrupted": false
+    }
+  ]
+}

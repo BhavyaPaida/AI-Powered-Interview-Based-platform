@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "id": "item_763b476afb4f",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hello! Welcome to your HR & Behavioral session. I'm your AI interviewer today. We'll start with a brief introduction, then go through 5 main questions with follow-ups. This will take about 15-20 minutes. Take your time with your responses and feel free to be detailed. Ready to begin?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_46c6b6fb5134",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9511719
+    },
+    {
+      "id": "item_a7496de38809",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great! Let's start with the first question:\n\n**Question 0: Introduce yourself - tell me about your background, education, and what you're passionate about.**"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_4cd42a504082",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hi. I am Bavia."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.83862305
+    },
+    {
+      "id": "item_8ddb92638ef9",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you, Bavia. It's nice to meet you.\n\nCould you elaborate a bit more on your background and what specifically you are passionate about, perhaps in relation to your B.Tech in CSE studies?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_b927fbcba3eb",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Like, it is trained. Like, we did"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9448242
+    },
+    {
+      "id": "item_eed187283008",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "I see. It seems like you're starting to tell me about your training and what you've done during your B.Tech. Could you please expand on that? What specific aspects of your CSE education have you found particularly engaging or what projects have you worked on?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_7f63ca6a389d",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "tuning to that model."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9921875
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "id": "item_474a21d337f1",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hello! Welcome to your Resume Based session.\nI'm your AI interviewer today. We'll start with a brief introduction, then go through 5 main questions with follow-ups.\nThis will take about 15-20 minutes. Take your time with your responses and feel free to be detailed. Ready to begin?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_33198f9344e7",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9863281
+    },
+    {
+      "id": "item_1f9ac34129a3",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great! Let's start with **Question 0: Introduce yourself - tell me about your background, education, and what you're passionate about.**"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_2ae31424fdd9",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great! Let's begin. Please introduce yourself - tell me about your educational background, what you're passionate about, and what interests you about this field."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_a3c2d978c47a",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "My name is Babia."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 1.0
+    },
+    {
+      "id": "item_13f66b535f07",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you, Babia. Can you please elaborate a bit more on your background, your B.Tech specialization, and what specifically drives your passion in computer science? I'm looking for a bit more detail beyond just your name."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_30f719eb5422",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "It's nice to meet you, Babia.\n\nCould you please expand on your background, education, and your passions within the CSE field? I'd love to hear more about what drives your interest."
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_426e176a3a57",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "I am interested in TS field. I like coding."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.8800455733333333
+    },
+    {
+      "id": "item_3ba26fc3c4a0",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you for sharing, Babia. It's good to know you're interested in the TS field and enjoy coding.\n\nTo help me understand your background better, could you tell me which specialization you pursued during your B.Tech, and what aspects of coding you find most engaging?"
+      ],
+      "interrupted": false
+    },
+    {
+      "id": "item_2da3f6510733",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thank you for sharing, Babia. It's good to hear you have an interest in the field.\n\nCould you tell me more about what aspects of coding you particularly enjoy? For example, do you prefer front-end, back-end, problem-solving, or something else?"
+      ],
+      "interrupted": false
+    }
+  ]
+}
